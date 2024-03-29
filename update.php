@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 <h1>Edit Task</h1>
-<form action="edit_task.php?id=<?php echo $task_id; ?>" method="post">
+<form action="update.php?id=<?php echo $task_id; ?>" method="post">
     <!-- Display existing task details in the form -->
     <label for="category">Category:</label><br>
     <input type="text" id="category" name="category" value="<?php echo $task['category']; ?>" required><br>
