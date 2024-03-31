@@ -41,38 +41,71 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit();
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Task</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<h1>Edit Task</h1>
-<form action="update.php?id=<?php echo $task_id; ?>" method="post">
-    <!-- Display existing task details in the form -->
-    <label for="category">Category:</label><br>
-    <input type="text" id="category" name="category" value="<?php echo $task['category']; ?>" required><br>
-    <label for="priority">Priority:</label><br>
-    <select id="priority" name="priority" required>
-        <option value="Low" <?php if ($task['priority'] == 'Low') echo 'selected'; ?>>Low</option>
-        <option value="Medium" <?php if ($task['priority'] == 'Medium') echo 'selected'; ?>>Medium</option>
-        <option value="High" <?php if ($task['priority'] == 'High') echo 'selected'; ?>>High</option>
-    </select><br>
-    <label for="task_name">Task Name:</label><br>
-    <input type="text" id="task_name" name="task_name" value="<?php echo $task['task_name']; ?>" required><br>
-    <label for="description">Description:</label><br>
-    <textarea id="description" name="description"><?php echo $task['description']; ?></textarea><br>
-    <label for="due_date">Due Date:</label><br>
-    <input type="date" id="due_date" name="due_date" value="<?php echo $task['due_date']; ?>"><br>
-    <label for="status">Status:</label><br>
-    <input type="text" id="status" name="status" value="<?php echo $task['status']; ?>"><br>
-    <label for="assigned_user">Assigned User:</label><br>
-    <input type="text" id="assigned_user" name="assigned_user" value="<?php echo $task['assigned_user']; ?>"><br>
-    <label for="estimated_time">Estimated Time:</label><br>
-    <input type="text" id="estimated_time" name="estimated_time" value="<?php echo $task['estimated_time']; ?>"><br>
-    <button type="submit">Update Task</button>
-</form>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Edit Task</h4>
+                </div>
+                <div class="card-body">
+                    <form action="update.php?id=<?php echo $task_id; ?>" method="post">
+                        <div class="mb-3">
+                            <label for="category" class="form-label">Category:</label>
+                            <input type="text" class="form-control" id="category" name="category" value="<?php echo $task['category']; ?>" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="priority" class="form-label">Priority:</label>
+                            <select class="form-select" id="priority" name="priority" required>
+                                <option value="Low" <?php if ($task['priority'] == 'Low') echo 'selected'; ?>>Low</option>
+                                <option value="Medium" <?php if ($task['priority'] == 'Medium') echo 'selected'; ?>>Medium</option>
+                                <option value="High" <?php if ($task['priority'] == 'High') echo 'selected'; ?>>High</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="task_name" class="form-label">Task Name:</label>
+                            <input type="text" class="form-control" id="task_name" name="task_name" value="<?php echo $task['task_name']; ?>" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description:</label>
+                            <textarea class="form-control" id="description" name="description" rows="3"><?php echo $task['description']; ?></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="due_date" class="form-label">Due Date:</label>
+                            <input type="date" class="form-control" id="due_date" name="due_date" value="<?php echo $task['due_date']; ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="status" class="form-label">Status:</label>
+                            <input type="text" class="form-control" id="status" name="status" value="<?php echo $task['status']; ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="assigned_user" class="form-label">Assigned User:</label>
+                            <input type="text" class="form-control" id="assigned_user" name="assigned_user" value="<?php echo $task['assigned_user']; ?>">
+                        </div>
+                        <div class="mb-3">
+                            <label for="estimated_time" class="form-label">Estimated Time:</label>
+                            <input type="text" class="form-control" id="estimated_time" name="estimated_time" value="<?php echo $task['estimated_time']; ?>">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update Task</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

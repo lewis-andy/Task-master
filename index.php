@@ -16,7 +16,7 @@ include('layout.php');
 <body>
 
 
-<a href="create.php">create a task</a>
+<!--<a href="create.php">create a task</a>-->
 
 
 <div class="banner-bottom clear">
@@ -241,80 +241,28 @@ include('layout.php');
                 <h2>What's new?</h2>
             </div>
             <div class="bt-content right">
-                <p>Accurate employee time tracking software for reporting, invoicing and painless payroll. Trusted by over 2,000 businesses in more than 70 countries.</p>
+                <p>We're excited to bring you a suite of new features, improvements, and fixes that make Task manager more intuitive, powerful, and tailored to your needs. </p>
             </div>
         </div>
         <div class="blog-items clear">
             <div class="blog-post-item left">
                 <img src="https://i.ibb.co/WFCF1tn/02.jpg" alt="">
                 <div class="blog-post-content">
-                    <h3>Reporting</h3>
-                    <p>Highly flexible reports to analyze time the way you want</p>
+                    <h3>Task Collaboration</h3>
+                    <p> Collaborate on tasks with your teammates in real-time. Assign tasks, share updates, and communicate directly within each task for seamless coordination.</p>
                 </div>
             </div>
             <div class="blog-post-item right">
                 <img src="https://i.ibb.co/HzKWcfv/03.jpg" alt="">
                 <div class="blog-post-content">
-                    <h3>Reporting</h3>
-                    <p>Highly flexible reports to analyze time the way you want</p>
+                    <h3>Customizable dashboards</h3>
+                    <p>Personalize your dashboard with new widget options and layout choices, giving you the power to access the information you need, faster.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="testimonial-section p-bg">
-    <div class="mid-content">
-        <div class="section-title newslatter-title text-center">
-            <p>Feedback from our users</p>
-            <h2> What do users say about our application</h2>
-        </div>
-        <div class="testimonial-items clear">
-
-            <div class="i-item left">
-                <div class="t-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
-                </div>
-                <div class="t-user-img clear">
-                    <img src="https://i.ibb.co/pfTjv0F/face1.jpg" alt="">
-                    <div class="t-user-bio">
-                        <h4>Jason Doe</h4>
-                        <span>User</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="i-item left">
-                <div class="t-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
-                </div>
-                <div class="t-user-img">
-                    <img src="https://i.ibb.co/dBZRkk6/face3.jpg" alt="">
-                    <div class="t-user-bio">
-                        <h4>Jason Doe</h4>
-                        <span>User</span>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="i-item left">
-                <div class="t-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perspiciatis vero accusantium excepturi aperiam eius sit quis nobis</p>
-                </div>
-                <div class="t-user-img">
-                    <img src="https://i.ibb.co/Ky7bG1T/face4.jpg" alt="">
-                    <div class="t-user-bio">
-                        <h4>Jason Doe</h4>
-                        <span>User</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
 
 <div class="contact-section">
     <div class="mid-content">
@@ -337,7 +285,7 @@ include('layout.php');
             </div>
         </div>
         <div class="footer text-center">
-            <p>© Copyright 2024 By MEHAKPREET SINGH - All Rights Reserved</p>
+            <p>© Copyright 2024 By PARTH SHARMA - All Rights Reserved</p>
         </div>
     </div>
 </div>

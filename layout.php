@@ -22,12 +22,12 @@
             <div class="primary-menu">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="">About Us</a></li>
+<!--                    <li><a href="">About Us</a></li>-->
                     <li><a href="create.php">create task </a>
 
                     </li>
                     <li><a href="view_tasks.php">your tasks</a></li>
-                    <li><a href="#">Contact</a></li>
+<!--                    <li><a href="#contact-section">Contact</a></li>-->
                 </ul>
             </div>
         </div>
