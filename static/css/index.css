@@ -610,3 +610,25 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
 .footer-contact-from {
     margin-top: 60px;
 }
+
+
+.notifications-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+}
+
+.notification-item {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+.notification-item.info {
+    background-color: #f0f0f0;
+    color: #333;
+}
