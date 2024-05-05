@@ -44,6 +44,11 @@ def home():
     return render_template('index.html')
 
 
+@app.route('/view_tasks')
+def view_tasks():
+    return render_template('view_tasks')
+
+
 @app.route('/layout')
 def layout():
     return render_template('layout.html')
